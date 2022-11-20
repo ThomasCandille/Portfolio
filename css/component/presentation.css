@@ -1,0 +1,19 @@
+.container_presentation{
+    font-size: x-large;
+}
+
+.txt_presentation{
+    margin: 2em;
+    animation: txt_presentation_appear 1s;
+}
+
+@keyframes txt_presentation_appear{
+    from{
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}

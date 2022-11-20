@@ -1,0 +1,77 @@
+
+.txt_contact{
+    margin-top: 1em;
+    font-size: large;
+    animation: txt_contact_appear 1s ;
+}
+
+@keyframes txt_contact_appear {
+    from{
+        transform: scale(0%);
+    }
+    to{
+        transform: scale(100%);
+    }
+}
+
+
+.reseaux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-left: 0%;
+} 
+
+.discord_img{
+    scale: 70%;
+}
+
+.discord_img:hover{
+        animation: contact 0.5s;
+}
+
+@keyframes contact {
+    0%{
+        transform: scale(100%);
+    }
+    33%{
+        transform: scale(110%);
+        transform: rotate(5deg);
+    }
+    66%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: scale(110%);
+        transform: rotate(0deg);
+    }
+    
+}
+
+.gmail_img{
+    scale: 70%;
+}
+
+.gmail_img:hover{
+    animation: contact 0.5s;
+}
+
+.linkedin_img{
+    scale: 70%;
+}
+
+.linkedin_img:hover{
+    animation: contact 0.5s;
+}
+
+@keyframes img_appear {
+    from{
+        opacity: 0;
+        transform: translateY(500px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,179 @@
+.wave{
+    position: absolute;
+    height: 57px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.vague1{
+    background:url(../../images/vague.svg);
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    opacity: 0.8;
+    animation: wave 10s -3s linear infinite;
+}
+
+.vague2{
+    background: url(../../images/vague.svg);
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    opacity: 0.5;
+    animation: wave 20s linear infinite;
+}
+
+.vague3{
+    background: url(../../images/vague.svg);
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    opacity: 0.4;
+    animation: wave 15s reverse linear infinite;
+}
+
+@keyframes wave {
+    from{
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-25%);
+    }
+    to {
+        ransform: translateX(-50%);
+    }
+}
+
+.navbar-nav{
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_main{
+    max-height: 450px;
+    background-image: url(../../images/stacked-waves-haikei.svg);
+}
+
+.ligne1{
+    font-size: 250%;
+    animation: slidein1 3s;
+    
+}
+
+.ligne2{
+    font-size: 315%;
+    animation: slidein2 4s;
+    white-space: nowrap;
+    overflow-x: hidden
+}
+
+
+#portrait{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+    height: 18%;
+    border-radius: 50%;
+    min-height: 146px;
+    min-width: 117px;
+    max-height: 190px;
+    max-width: 152px;
+    animation: shade 5s;
+}
+
+.ligne3{
+    font-size: 225%;
+    animation: slidein3 5s;
+    white-space: nowrap;
+    overflow-x: hidden
+}
+
+@keyframes slidein1 {
+    0%{margin-left: 150%;}
+    20%{margin-left: 100%;}
+    100%{margin-left: 0%;}
+}
+
+@keyframes slidein2 {
+    30%{margin-left: 150%;}
+    50%{margin-left: 100%;}
+    100%{margin-left: 0%;}
+}
+
+
+@keyframes slidein3 {
+    60%{margin-left: 150%;}
+    80%{margin-left: 100%;}
+    100%{margin-left: 0%;}
+}
+
+.listeAxes{
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.cdi{
+    padding: 1em;
+    font-family: monospace;
+    font-size: x-large;
+    overflow: hidden;
+    border-radius: 20%;
+    background-color: lightblue;
+    white-space: nowrap;
+    animation: type 4s steps(20, end);
+}
+
+@keyframes type {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.troisd{
+    padding: 1em;
+    font-size: x-large;
+    border-radius: 20%;
+    background-color: lightblue;
+    animation: shade 4s linear;
+}
+
+.jv{
+    padding: 1em;
+    font-size: x-large;
+    background-color: lightblue;
+    border-radius: 20%;
+    animation: shade 4s linear;
+}
+
+@keyframes shade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.crea{
+    padding: 1em;
+    font-size: x-large;
+    background-color: lightblue;
+    border-radius: 20%;
+    animation: shade 4s linear;
+}
+
+.comm{
+    padding: 1em;
+    font-size: x-large;
+    border-radius: 20%;
+    background-color: lightblue;
+    animation: shade 4s linear;
+}
